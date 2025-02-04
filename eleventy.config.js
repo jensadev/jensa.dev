@@ -29,6 +29,7 @@ import {
   slug,
   tagFilter,
   yearString,
+  getMatchingLink
 } from "./src/_config/filters/index.js"
 // Plugins
 import markdownLibrary from "./src/_config/plugins/markdown.js"
@@ -74,6 +75,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", limit)
   eleventyConfig.addFilter("getYears", getYears)
   eleventyConfig.addFilter("slug", slug)
+  eleventyConfig.addFilter("getMatchingLink", getMatchingLink)
 
   // Shortcodes
   eleventyConfig.addShortcode("year", year)
