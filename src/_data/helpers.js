@@ -68,5 +68,5 @@ const getLinkActiveState = (itemUrl, pageUrl) => {
   return response;
 }
 
-export { random, randInt, getReadingTime, getPageLinks, getLinkActiveState };
+export { random, randInt, getReadingTime, getPageLinks, getLinkActiveState};
 export default { random, randInt, getReadingTime, getPageLinks, getLinkActiveState };

@@ -74,6 +74,24 @@ const slug = (str) => {
   })
 }
 
+function getMatchingLink(page, localeLinks) {
+  const urlSegments = page.url.split('/');
+  const lastNonEmptyIndex = urlSegments.reduce((lastIndex, segment, index) => {
+    return segment ? index : lastIndex;
+  }, -1);
+
+  const lastSegment = urlSegments[lastNonEmptyIndex];
+  // console.log(lastSegment);
+
+  const matchingLink = localeLinks.find(link => link.url.includes(lastSegment));
+  // console.log(matchingLink);
+
+  if (matchingLink) {
+    return matchingLink;
+  }
+}
+
+
 export {
   frontDate,
   getDemo,
@@ -87,4 +105,5 @@ export {
   slugify,
   tagFilter,
   yearString,
+  getMatchingLink
 }

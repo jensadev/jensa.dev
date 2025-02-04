@@ -3,9 +3,11 @@
     lang="{{ page.lang | trim }}"
     hreflang="{{ page.lang }}"
     class="active">{{ page.lang }}</a>
-  {% for link in page.url | locale_links %}
-  <a href="{{ link.url }}"
-    lang="{{ link.lang }}"
-    hreflang="{{ link.lang }}">{{ link.lang }}</a>
-  {% endfor %}
+    {% if "tag" not in page.url %}
+      {% for link in page.url | locale_links %}
+      <a href="{{ link.url }}"
+        lang="{{ link.lang }}"
+        hreflang="{{ link.lang }}">{{ link.lang }}</a>
+      {% endfor %}
+    {% endif %}
 </nav>
