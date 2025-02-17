@@ -2,8 +2,8 @@
 title: Webbserver-programmering
 emphasis: 1
 date: 2022-05-16
-update: 2022-06-30
-tags: ['webbserver', 'setup', 'node', 'wsl', 'sql']
+update: 2025-02-17
+tags: ['webbserver', 'node', 'wsl', 'sql']
 templateEngineOverride: njk, md
 category: resurser
 summary: Istället för att dela upp det jag skriver på flera olika webbplatser (kursböcker) har jag bestämt mig för att samla det här. Det här är alltså en introduktionspost till det du behöver för att kunna arbeta med kursen webbserverprogrammering (i min regi).
@@ -11,13 +11,13 @@ summary: Istället för att dela upp det jag skriver på flera olika webbplatser
 
 För kursen Webbserverprogrammering 1 på gymnasienivå har jag valt tekniken, eller stacken, Node, Mysql och WSL. Jag anser att den är relevant och bra plattform att utgå ifrån. Den här stacken har även fördelen att använda javascript backend, för då använder vi samma programmeringsspråk som för frontend. Hosting, som sista pusselbit, gör vi med molntjänster.
 
-Det här en introduktion till de olika delarna du behöver förbereda för att kunna arbeta med kursen. Här hittar du installationsinstruktioner, länkar och exempel.
+Det här är en introduktion till de olika delarna du behöver förbereda för att kunna arbeta med kursen. Här hittar du installationsinstruktioner, länkar och exempel.
 
 ## Windows Subsystem for Linux
 
-WSL låter oss köra Linux under Windows. Det är i min mening helt fantastiskt och med det slipper vi dual-boot och massa annan ondska. Det är enkelt och smidigt (värdeord, relativt i sammanhanget, för alternativen är mer komplexa) och ger dig tillgång till bash i en terminal under Windows. Med WSL2 går det även att köra grafiska program om du så önskar.
+WSL låter oss köra Linux under Windows. Det är i min mening helt fantastiskt och med det slipper vi dual-boot och massa annan ondska. Det är enkelt och smidigt (värdeord, relativt i sammanhanget, för alternativen är mer komplexa) och ger dig tillgång till bash i en terminal under Windows. Det här är nästa steg om du tidigare kört [Git-Bash](https://git-scm.com/downloads), du kommer känna igen dig men nu har du en faktiskt Linux installation under windows. Med WSL2 går det även att köra grafiska program om du så önskar.
 
-Att kunna åtminstone lite bash och kunna arbeta i terminalen är viktigt för att arbeta med kod anser jag. Det ger en ökad förståelse för datorns struktur, kommandon och funktion. Med WSL kan du välja vilken [Linux dist](https://en.wikipedia.org/wiki/Linux_distribution) du vill köra, men till att börja med rekommenderar jag Ubuntu (finns i Microsoft store).
+Att kunna åtminstone lite bash och kunna arbeta i terminalen är viktigt för att arbeta med kod anser jag. Det ger en ökad förståelse för datorns struktur, kommandon och funktion. Med WSL kan du välja vilken [Linux dist](https://en.wikipedia.org/wiki/Linux_distribution) du vill köra, men till att börja med rekommenderar jag Ubuntu (finns i Microsoft store). Leta efter Long term support (LTS) versionen. 
 
 **Innan du kör igång så se till att du har kört windows update, startat om och repeterat detta ett antal gånger.**
 
@@ -64,7 +64,7 @@ ls -la
 
 ## Nodejs
 
-[Node](https://nodejs.org/en/) är en javascript runtime byggd på Chrome V8s javascript motor. Med ramverket [Express](https://expressjs.com/) blir Node den webbserver (för utveckling) vi använder. Tillsammans med Node så kommer vi att använda oss av [Node packet manager (npm)](https://www.npmjs.com/). NPM är en populär pakethanterare för javascript-utveckling och ett viktigt verktyg att känna till och kunna använda.
+[Node](https://nodejs.org/en/) är en javascript runtime byggd på Chrome V8s javascript motor. Med ramverket [Express](https://expressjs.com/) blir Node den webbserver (för utveckling) vi använder. Tillsammans med Node så kommer vi att använda oss av [Node packet manager (npm)](https://www.npmjs.com/). NPM är en populär pakethanterare för javascript-utveckling och ett viktigt verktyg att känna till och kunna använda, det gäller både front och back-end.
 
 För att installera och köra Node samt NPM så använder vi oss utan Node Version Manager(nvm).
 
@@ -72,15 +72,15 @@ För att installera och köra Node samt NPM så använder vi oss utan Node Versi
 
 ## MySQL
 
-För att arbeta med databas så använder vi [MySQL](https://www.mysql.com/). SQL är ett språk för relationsdatabaser, MySQL är en hanterare för detta. Vi använder SQL som databasspråk för att det är en introduktion till databaser och hur de fungerar. Vi kör MySQL för att det är en av de vanligaste databashanterarna.
+För att arbeta med databas så använder vi [MySQL](https://www.mysql.com/). SQL är ett språk för relationsdatabaser, MySQL är en hanterare för detta. Vi använder SQL som databasspråk för att det är en välanvänd standard och det blir din introduktion till databaser och hur de fungerar. Vi kör MySQL för att det är en av de vanligaste databashanterarna.
 
-MySQL körs med en server på din eller en annan dator. Du kan sedan använda en klient för att koppla upp dig till databasservern. FÖr att installera MySQL server och klient kör.
+MySQL körs med en server på din eller en annan dator. Du kan sedan använda en klient för att koppla upp dig till databasservern. För att installera MySQL server och klient kör.
 
 ```bash
 sudo apt install mysql-server mysql-client
 ```
 
-WSL verkar inte starta upp MySQL servern korrekt när det startas, för att starta om/upp servern använder du följande kommando. Om det inte fungerar, testa att starta om din dator och prova sedan igen.
+WSL startar inte alltid upp MySQL servern korrekt när det startas, för att starta om/upp servern använder du följande kommando. Om det inte fungerar, testa att starta om din dator och prova sedan igen.
 
 ```bash
 sudo service mysql restart
@@ -116,6 +116,14 @@ Väl inne i klienten så kan du prova att skapa en databas för kursen. Om det f
 CREATE DATABASE webbserver;
 SHOW databases;
 ```
+
+## Visual studio code
+
+Från bash under WSL så kan du starta Visual studio code från den aktuella mappen, jag rekommenderar att du gör det för att hela tiden vara i ditt projekts folder. För att starta VSCode i den aktuella mappen skriver du `code .`. Det här är även viktigt för att det startar Visual studio codes remote till ditt VSCode (första gången så installerar den ett tillägg innan det startar). Du kan se att du är uppkopplad till WSL i nedre vänstra hörnet av VSCode.
+
+{% image "./src/images/Screenshot 2025-02-17 165426.png", "WSL connect" %}
+
+Om det strular så kan du också dubbelkolla att du har installerat VScodes extension för WSL, du hittar den på [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
 
 ## Avslutning
 
