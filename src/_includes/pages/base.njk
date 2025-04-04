@@ -5,8 +5,6 @@
 
 <head>
   <base href="{{ page.url }}">
-  <link rel="preconnect" href="https://api.fontshare.com">
-  <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" as="style">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,7 +12,6 @@
   <link rel="alternate" type="application/rss+xml" title="{{ meta.siteName }}" href="{{ meta.url }}/feed.xml" />
   <link rel="stylesheet" href="/css/style.css?{{ assetHash }}" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
   {% block head %}{% endblock %}
 </head>
 
