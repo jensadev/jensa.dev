@@ -29,6 +29,6 @@ if (consent) {
   })
 }
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   siteSearch()
-// })
+window.addEventListener("DOMContentLoaded", () => {
+  siteSearch()
+})
