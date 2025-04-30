@@ -1,18 +1,18 @@
 {% set splitTitle = title.split(" ") %}
 <header role="banner" class="site-head content">
-  {% include "../components/nav.njk" %}
-  <div class="region site-head--inner flow popout">
-    {% if page.url %}
-    {% if "posts" in page.url %}
-    {% include "../components/breadcrumbs.njk" %}
-    {% else %}
-    <h1 class="{{ class }}">
-      {% for word in splitTitle %}
-          <span {% if emphasis == loop.index %}class="word"{% endif %}>{{ word }}</span>
-        {% endfor %}
-        </h1>
-        <p class="lead">{{ lead | safe }}</p>
-      {% endif %}
-    {% endif %}
-  </div>
+    {% include "../components/nav.njk" %}
+    <div class="region site-head--inner flow popout">
+        {% if page.url %}
+            {% if "posts" in page.url %}
+                {% include "../components/breadcrumbs.njk" %}
+            {% else %}
+            <h1 class="{{ class }}">
+                {% for word in splitTitle %}
+                <span {% if emphasis==loop.index %}class="word" {% endif %}>{{ word }}</span>
+                {% endfor %}
+            </h1>
+            <p class="lead">{{ lead | safe }}</p>
+            {% endif %}
+        {% endif %}
+    </div>
 </header>

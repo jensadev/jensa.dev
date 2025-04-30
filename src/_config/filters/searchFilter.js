@@ -1,4 +1,3 @@
-import { ca } from "date-fns/locale"
 import elasticlunr from "elasticlunr"
 
 const searchFilter = async (collection) => {
@@ -22,13 +21,11 @@ const searchFilter = async (collection) => {
         // if the page is not a markdown file, skip it
         if (!page.inputPath.endsWith(".md")) continue
 
-        const tags = data.tags ? data.tags.toString() : ""
-
         index.addDoc({
             id: page.url,
             title: data.title,
             summary: data.summary || "",
-            tags: tags,
+            tags: data.tags ? data.tags.toString() : "",
             category: data.category || "",
         })
     }
