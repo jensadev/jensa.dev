@@ -17,6 +17,7 @@
 
 <body>
   <a class="skip-link" href="#main-content">{{ languages[page.lang].skipText }}</a>
+  {% include "../components/search-modal.njk" %}
   {% block header %}
   {% include "../layouts/site-head.njk" %}
   {% endblock %}
