@@ -19,12 +19,15 @@ svg.lightIcon:hover, svg.darkIcon:hover {
   flex-wrap: wrap;
   column-gap: var(--gutter);
 
+  margin-top: var(--space-xs-s);
+
   ul {
     display: flex;
     align-items: center;
     gap: var(--gutter);
     justify-content: space-between;
     padding: 0;
+    margin: 0;
   }
 
   a {
