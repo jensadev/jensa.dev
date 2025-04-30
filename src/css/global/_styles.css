@@ -29,6 +29,7 @@ html {
 body {
   color: var(--color-fg);
   background-color: var(--color-bg);
+  font-display: optional;
 }
 
 [data-theme="light"] {
