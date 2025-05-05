@@ -4,10 +4,14 @@
   opacity: 0.9;
 }
 
-svg.lightIcon, svg.darkIcon {
+svg.search-icon {
+    display: block;
+}
+
+svg.light-icon, svg.dark-icon {
   transition: transform 0.3s ease-in-out;
 }
-svg.lightIcon:hover, svg.darkIcon:hover {
+svg.light-icon:hover, svg.dark-icon:hover {
   transform: rotate(360deg);
 }
 
@@ -44,21 +48,21 @@ svg.lightIcon:hover, svg.darkIcon:hover {
 }
 
 /* css for the theme switcher */
-.darkIcon {
+.dark-icon {
   display: none;
 }
-.lightIcon {
+.light-icon {
   display: block;
 }
-html[data-theme="dark"] .darkIcon {
+html[data-theme="dark"] .dark-icon {
   display: block;
 }
-html[data-theme="dark"] .lightIcon {
+html[data-theme="dark"] .light-icon {
   display: none;
 }
-html[data-theme="light"] .darkIcon {
+html[data-theme="light"] .dark-icon {
   display: none;
 }
-html[data-theme="light"] .lightIcon {
+html[data-theme="light"] .light-icon {
   display: block;
 }
