@@ -27,8 +27,8 @@ html {
   color-scheme: dark light;
 }
 body {
-  color: var(--color-fg);
-  background-color: var(--color-bg);
+  color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
   font-display: optional;
 }
 

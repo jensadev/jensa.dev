@@ -1,5 +1,6 @@
 @import 'global/_reset.css';
-@import 'global/_variables.css';
+/* @import 'global/_variables.css'; */
+@import "global/_design_tokens.css";
 @import 'global/_styles.css';
 @import 'global/_type.css';
 

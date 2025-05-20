@@ -36,7 +36,7 @@
   --step-5: clamp(3.4331rem, 2.7975rem + 3.1783vw, 5.2606rem);
 
   
-  /* --dark: #1d1c1b;
+--dark: #1d1c1b;
   --light: #f2f0e4;
   --orange: #d96b52;
   --red: #d95e52;
@@ -45,9 +45,9 @@
   --color-primary-light: hsl(343, 100%, 53%);
   --color-primary-light-transparent: hsla(343, 100%, 53%, 0.8);
   --color-primary-dark: hsl(343, 80%, 53%);
-  --color-primary-dark-transparent: hsla(343, 80%, 53%, 0.8); */
+  --color-primary-dark-transparent: hsla(343, 80%, 53%, 0.8); 
 
-  --dark: #1f1235;
+  /* --dark: #1f1235;
   --dark-less: #1b1425;
   --light: #FFFFFF;
   --orange: #ff6e6c;
@@ -57,7 +57,7 @@
   --purple-lighter: #67568c;
 
   --color-primary-dark: var(--purple);
-  --color-primary-light: var(--orange);
+  --color-primary-light: var(--orange); */
   
   --color-secondary: #7678ED;
 
