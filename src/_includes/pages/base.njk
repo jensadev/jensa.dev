@@ -13,6 +13,7 @@
   <link rel="alternate" type="application/rss+xml" title="{{ meta.siteName }}" href="{{ meta.url }}/feed.xml" />
   <link rel="stylesheet" href="/css/style.css?{{ assetHash }}" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  {% include "../components/analytics.njk" %}
   {% block head %}{% endblock %}
 </head>
 
