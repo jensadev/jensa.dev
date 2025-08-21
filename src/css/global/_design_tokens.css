@@ -1,25 +1,7 @@
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
 :root {
-    /* Colors */
-    --color-dark: #1d1c1b;
-    --color-light: #f2f0e4;
-    --color-orange: #d96b52;
-    --color-red: #d95e52;
-    --color-gray: #404e64;
-    --color-red: hsl(343, 100%, 53%);
-
-    --color-primary: var(--color-red);
-    --color-primary-light: color-mix(in srgb, var(--color-primary), var(--color-light) 50%);
-    --color-primary-light-transparent: color-mix(in srgb, var(--color-primary), var(--color-light) 50%, 0.8);
-    --color-primary-dark: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%);
-    --color-primary-dark-transparent: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%, 0.8);
-
-    /* --color-primary-light: hsl(343, 100%, 53%);
-    --color-primary-light-transparent: hsla(343, 100%, 53%, 0.8);
-    --color-primary-dark: hsl(343, 80%, 53%);
-    --color-primary-dark-transparent: hsla(343, 80%, 53%, 0.8); */
-
-    --color-secondary: #7678ED;
-
     /* Spacing */
     --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
     --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
@@ -57,9 +39,28 @@
     --step-3: clamp(2.1975rem, 1.9321rem + 1.3272vw, 2.9606rem);
     --step-4: clamp(2.7469rem, 2.3295rem + 2.087vw, 3.9469rem);
     --step-5: clamp(3.4331rem, 2.7975rem + 3.1783vw, 5.2606rem);
-}
 
-:root {
+    /* Colors */
+    --color-dark: #1d1c1b;
+    --color-light: #f2f0e4;
+    --color-orange: #d96b52;
+    --color-red: hsl(5, 64%, 59%);
+    --color-gray: #404e64;
+    --color-red: hsl(343, 100%, 53%);
+
+    --color-primary: var(--color-red);
+    --color-primary-light: color-mix(in srgb, var(--color-primary), var(--color-light) 50%);
+    --color-primary-light-transparent: color-mix(in srgb, var(--color-primary), var(--color-light) 50%, 0.8);
+    --color-primary-dark: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%);
+    --color-primary-dark-transparent: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%, 0.8);
+
+    /* --color-primary-light: hsl(343, 100%, 53%);
+    --color-primary-light-transparent: hsla(343, 100%, 53%, 0.8);
+    --color-primary-dark: hsl(343, 80%, 53%);
+    --color-primary-dark-transparent: hsla(343, 80%, 53%, 0.8); */
+
+    --color-secondary: #7678ED;
+
     /* Text */
     --text-color-primary: var(--color-gray);
     --text-color-secondary: var(--color-secondary);

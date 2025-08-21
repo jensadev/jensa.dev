@@ -1,6 +1,6 @@
-:root {
-  --color-bg: var(--light);
-  --color-fg: var(--dark);
+:root, :root[data-theme="light"] {
+  --color-bg: var(--color-light);
+  --color-fg: var(--color-dark);
   --color-primary: var(--color-primary-dark);
   --color-primary-transparent: var(--color-primary-dark-transparent);
   --cover-gradient: linear-gradient(
@@ -11,8 +11,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: var(--dark);
-    --color-fg: var(--light);
+    --color-bg: var(--color-dark);
+    --color-fg: var(--color-light);
     --color-primary: var(--color-primary-dark);
     --color-primary-transparent: var(--color-primary-dark-transparent);
     --cover-gradient: linear-gradient(
@@ -23,32 +23,10 @@
   }
 }
 
-html {
-  color-scheme: dark light;
-}
-body {
-  color: var(--text-color-primary);
-  background-color: var(--background-color-primary);
-  font-display: optional;
-}
-
-[data-theme="light"] {
-  color-scheme: light;
-  --color-bg: var(--light);
-  --color-fg: var(--dark);
-  --color-primary: var(--color-primary-dark);
-  --color-primary-transparent: var(--color-primary-dark-transparent);
-  --cover-gradient: linear-gradient(
-    to right,
-    var(--color-fg),
-    var(--color-primary)
-  );
-}
-
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   color-scheme: dark;
-  --color-bg: var(--dark);
-  --color-fg: var(--light);
+  --color-bg: var(--color-dark);
+  --color-fg: var(--color-light);
   --color-primary: var(--color-primary-dark);
   --color-primary-transparent: var(--color-primary-dark-transparent);
   --cover-gradient: linear-gradient(
@@ -56,6 +34,15 @@ body {
     var(--color-primary),
     var(--color-bg)
   );
+}
+
+html {
+  color-scheme: dark light;
+}
+body {
+  color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
+  font-display: optional;
 }
 
 a {
