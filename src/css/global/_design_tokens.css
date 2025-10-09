@@ -48,11 +48,10 @@
     --color-gray: #404e64;
     --color-red: hsl(343, 100%, 53%);
 
-    --color-primary: var(--color-red);
-    --color-primary-light: color-mix(in srgb, var(--color-primary), var(--color-light) 50%);
-    --color-primary-light-transparent: color-mix(in srgb, var(--color-primary), var(--color-light) 50%, 0.8);
-    --color-primary-dark: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%);
-    --color-primary-dark-transparent: color-mix(in srgb, var(--color-primary), var(--color-dark) 50%, 0.8);
+    --color-red-light: color-mix(in srgb, var(--color-red), var(--color-light) 50%);
+    --color-red-light-transparent: color-mix(in srgb, var(--color-red), var(--color-light) 50%, 0.8);
+    --color-red-dark: color-mix(in srgb, var(--color-red), var(--color-dark) 50%);
+    --color-red-dark-transparent: color-mix(in srgb, var(--color-red), var(--color-dark) 50%, 0.8);
 
     /* --color-primary-light: hsl(343, 100%, 53%);
     --color-primary-light-transparent: hsla(343, 100%, 53%, 0.8);
