@@ -14,7 +14,7 @@
   {% if category %}
   <p class="lead">från 
     {% if category == "resurser" %}
-      <a href="/{{ category | locale_links }}">{{ category }}</a>
+      <a href="/{{ page.lang }}/{{ "resurser" | locale_links }}">{{ category }}</a>
     {% else %}
       {{ category }}
     {% endif %}
