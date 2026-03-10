@@ -2,7 +2,7 @@
 title: Kursmaterial
 date: 2026-03-10
 summary: "Nytt år, nya möjligheter och nu försöker jag samla allt kursmaterial på ett ställe igen."
-tags: [ 'kursmaterial', 'jobb'
+tags: [ 'kursmaterial', 'jobb']
 ---
 
 2026, det händer väldigt mycket i världen just nu och allt är inte positivt. Den här sidan har blivit lite eftersatt och det är till stor del för att jag jobbat på att samla material för mina kurser på ett ställe. Det stället är inte den här sidan, som iden var en gång i tiden, mest för att jag inte riktigt var nöjd med det.
