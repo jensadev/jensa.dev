@@ -1,5 +1,5 @@
 ---
-title: CV
+title: CV - Jens Andreasson
 eleventyExcludeFromCollections: true
 permalink: /sv/cv/
 ---
@@ -10,207 +10,205 @@ permalink: /sv/cv/
 
 {% block head %}
 <meta name="robots" content="noindex,nofollow" />
+<link rel="stylesheet" href="/css/cv.css">
 {% endblock %}
 
 {% block content %}
-<style>
-  body {
-    color: var(--dark);
-    background-color: var(--light);
-  }
-
-  ol {
-    padding-inline-start: 0;
-  }
-
-  .sidebar {
-    --sidebar-target-width: 14rem;
-  }
-
-  aside {
-    font-size: var(--step-0);
-  }
-
-  aside>picture>img {
-    border-radius: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  li>p:first-of-type {
-    margin: var(--space-2xs) 0;
-    font-size: var(--step-0);
-  }
-
-  @media print {
-    .adr-link::after {
-      content: " (" attr(href) ") ";
-    }
-
-    .anchor {
-      display: none;
-    }
-
-    .sidebar {
-      display: block;
-    }
-    picture {
-      display: none;
-    }
-  }
-</style>
 <main id="main-content" tabindex="-1" class="region">
-  <article class="content flow">
-    <header class="flow">
-      <h1>Jens Andreasson</h1>
-      <p>Legitimerad lärare i webbteknik(er), gränssnittsdesign, programmering och engelska.</p>
-      <p>Mitt stora intresse är främst inom webben, att kunna skapa, både front och back-end, samt att göra webben
-        bättre för alla.</p>
-      <P>De senaste åren har jag också varit involverad i flera projekt tillsammans med Umeå och Uppsala universitet för
-        att utvecklas pedagogiskt, vilket är kul, givande och intressant.</P>
-    </header>
-    <div class="sidebar">
-      <aside class="flow">
-        {% image "./src/images/20220720_132435-edit.jpg", "Mitt fejs" %}
-        <div>
-          <h3>Kontakt</h3>
-          <address>
-            Jens Andreasson<br />
-            <a class="adr-link" href="https://www.linkedin.com/in/jens-andreasson-bba4141a2/" target="_blank"
-              rel="noreferrer noopener">LinkedIn</a><br />
-            <a class="adr-link" href="https://github.com/jensadev" target="_blank" rel="noreferrer noopener">GitHub</a>
-          </address>
+    <article class="content flow">
+        <header class="flow lead">
+            <p>Legitimerad lärare (gy11/25) i AI, gränssnittsdesign, programmering, webbteknik(er) och engelska.</p>
+            <p>Mitt stora intresse är främst inom programmering och webben! Jag gillar att skapa med programmering och webb, både front och back-end.</p>
+            <p>Jag drivs av förstå och att undersöka med målet att hela tiden utvecklas.</p>
+            <p>Jag har även under flera år arbetat tillsammans med Umeå och Uppsala universitet för att forska om
+                pedagogik vilket är både utmanande, utvecklande och roligt.</p>
+        </header>
+        <div class="sidebar">
+            <aside class="flow">
+                {% image "./src/images/20220720_132435-edit.jpg", "Mitt fejs" %}
+                <div>
+                    <h3>Kontakt</h3>
+                    <address>
+                        Jens Andreasson<br />
+                        <a class="adr-link" href="https://www.linkedin.com/in/jens-andreasson-bba4141a2/"
+                            target="_blank" rel="noreferrer noopener">LinkedIn</a><br />
+                        <a class="adr-link" href="https://github.com/jensadev" target="_blank"
+                            rel="noreferrer noopener">GitHub</a>
+                    </address>
+                </div>
+                <div>
+                    <h3>Övriga kompetenser</h3>
+                    <ul class="cv-list">
+                        <li>GitHub Campus Advisor</li>
+                        <li>Cert: Javascript, css, html</li>
+                        <li>B körkort</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Språk</h3>
+                    <ul class="cv-list">
+                        <li>Svenska - Modersmål</li>
+                        <li>Engelska - Obehindrat</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Programmering</h3>
+                    <ul class="cv-list">
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Webb</h3>
+                    <ul class="cv-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>UX/UI</li>
+                        <li>Tillgänglighet</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Övrigt</h3>
+                    <ul class="cv-list">
+                        <li>Git</li>
+                        <li>GitHub Campus Advisor</li>
+                        <li>3d-printing</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Referenser</h3>
+                    <p>Lämnas på begäran.</p>
+                </div>
+            </aside>
+            <div class="flow">
+                <h2>Arbetslivserfarenhet</h2>
+                <ol class="flow" role="list">
+                    <li>
+                        <h3>Förstelärare - NTI Gymnasiet Umeå</h3>
+                        <p>
+                            <time datetime="2022-08">Augusti 2022</time> -
+                            <time datetime="{% year %}">nu</time>
+                        </p>
+                        <p>Som förstelärare på NTI Gymnasiet Umeå har jag det senaste året haft övergripande
+                            ansvar för att leda fortbildning i kollegiet. Jag har även varit cirkelledare i ULF-projekt
+                            (Uppsala universitet) för att beforska programmeringspedagogik.</p>
+                    </li>
+                    <li>
+                        <h3>Lärare - NTI Gymnasiet Umeå</h3>
+                        <p>
+                            <time datetime="2017-08">Augusti 2017</time> -
+                            <time datetime="{% year %}">nu</time>
+                        </p>
+                        <p>
+                            I min roll som lärare på NTI Gymnasiet undervisar jag för närvarande i webbutveckling,
+                            webbserverprogrammering, programering, tillämpad programmering samt gymnasiearbetet. Jag är
+                            ansvarig för teknikprogrammet och dess innehåll.</p>
+                        <p>Utöver det har jag utvecklat och undervisat på te4 (gymnasieingejörer) i 7 år samt undervisat
+                            i teknik.</p>
+                    </li>
+                    <li>
+                        <h3>Lärare - NTI Skolan</h3>
+                        <p>
+                            <time datetime="2013-04">April 2013</time> -
+                            <time datetime="2017-08">Augusti 2017</time>
+                        </p>
+                        <p>
+                            På NTI Skolan arbetade jag med vuxenutbildning på distans. Jag var involverad i
+                            kursutveckling och
+                            undervisade i en rad olika ämnen och kurser, från datorteknik till programmering form.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Föreläsare</h3>
+                        <p>
+                            Skolverket, <time datetime="2019">2019</time>
+                        </p>
+                        <p>Inspirationsföreläsning för Skolverket om kursupplägg och innehåll i Tillämpad
+                            programmering.
+                        </p>
+                    </li>
+                </ol>
+                <h2>Forskning och utbildning</h2>
+                <ol class="flow" role="list">
+                    <li>
+                        <h3>Kurser</h3>
+                        <p>Södertörns högskola, <time datetime="2025">2025</time> -
+                            <time datetime="2026">2026</time>
+                        </p>
+                        <p>Läser för närvarande Mentorsutbildning för en kvalitativ introduktionsperiod som ett led för
+                            professionsprogrammet.</p>
+                    </li>
+                    <li>
+                        <h3>Kurser</h3>
+                        <p>
+                            Umeå universitet, <time datetime="2024">2024</time> -
+                            <time datetime="2025">2025</time>
+                        </p>
+                        <ul class="cv-list">
+                            <li>Att undervisa artificiell intelligens på gymnasial nivå -
+                                samhällsperspektiv</li>
+                            <li>Att undervisa artificiell intelligens på gymnasial nivå - tekniska
+                                perspektiv</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>ULF projekt, programmering</h3>
+                        <p>
+                            Uppsala universitet, <time datetime="2022">2022</time> - <time datetime="2024">2025</time>
+                        </p>
+                        <p>Under denna period har jag verkat som cirkelledare i ett ULF-projekt i samarbete med Uppsala
+                            universitet med fokus på programmering på gymnasienivå. Detta har lett till publikationen av
+                            två stycken artiklar och presentation på <a
+                                href="https://liu.se/forskning/forum-for-forskningsbaserad-nt-undervisning-fobasnt"
+                                target="_blank">Fobas-NT</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Forskningsprojekt, Active learning classroom</h3>
+                        <p>
+                            Umeå universitet, <time datetime="2018">2018</time> -
+                            <time datetime="2020">2020</time>
+                        </p>
+                        <p>Deltagare i ett forskningsprojekt kring ALC-klassrum i samarbete med Umeå universitet.<a
+                                href="https://umu.diva-portal.org/smash/record.jsf?pid=diva2:1355875"
+                                target="_blank">Abstrakt</a>.</p>
+                    </li>
+                    <li>
+                        <h3>Lärarexamen på avancerad nivå</h3>
+                        <p>
+                            Umeå universitet, <time datetime="2016">2016</time>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Kurser</h3>
+                        <p>
+                            Luleå tekniska universitet,
+                            <time datetime="2013">2013</time> -
+                            <time datetime="2021">2021</time>
+                        </p>
+                        <ul class="cv-list">
+                            <li>Introduktion till datorspelsskapande</li>
+                            <li>Introduktion till programmering och C#</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Kurser</h3>
+                        <p>
+                            Umeå universitet, <time datetime="2007">2007</time> -
+                            <time datetime="2021">2021</time>
+                        </p>
+                        <ul class="cv-list">
+                            <li>Handledarkurs för lärarstudenter</li>
+                            <li>Webb, css, javascript - flertal kurser</li>
+                            <li>Informatik</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
         </div>
-        <div>
-          <h3>Övriga kompetenser</h3>
-          <ul class="cv-list">
-            <li>GitHub Campus Advisor</li>
-            <li>MTA: Javascript, css, html</li>
-            <li>UX, användbarhet och tillgänglighet</li>
-            <li>B körkort</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Språk</h3>
-          <ul class="cv-list">
-            <li>Svenska - Modersmål</li>
-            <li>Engelska - Obehindrat</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>SQL</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Referenser</h3>
-          <p>Referenser lämnas på begäran.</p>
-        </div>
-      </aside>
-      <div class="flow">
-        <h2>Arbetslivserfarenhet</h2>
-        <ol class="flow" role="list">
-          <li>
-            <h3>Förstelärare</h3>
-            <p>
-              NTI Gymnasiet Umeå,
-              <time datetime="2022-08">Augusti 2022</time> -
-              <time datetime="{% year %}">nu</time>
-            </p>
-            <p>Som förstelärare på NTI Gymnasiet Umeå har jag haft ansvar för och lett två grupper inom ULF-projektet i
-              samarbete med Uppsala universitet. Projekten har fokuserat på att utveckla
-              programmerings-pedagogiken genom att bland annat undervisa i felsökning och användning av debugger för att
-              förstå kod.</p>
-            <p>Jag har även haft uppdraget att främja användningen av Git/GitHub på nationell nivå inom NTI Gymnasiet,
-              vilket har inkluderat skapandet av utbildningsmaterial och workshops.</p>
-          </li>
-          <li>
-            <h3>Lärare</h3>
-            <p>
-              NTI Gymnasiet Umeå,
-              <time datetime="2017-08">Augusti 2017</time> -
-              <time datetime="{% year %}">nu</time>
-            </p>
-            <p>
-              I min roll som lärare på NTI Gymnasiet undervisar jag i teknik, gymnasiearbete, webbteknik och
-              programmering. Jag är också en av de ansvariga för skolans gymnasieingenjörsutbildning, där jag är
-              engagerad i att utveckla och styra innehållet och nivån på våra kurser.
-            </p>
-          </li>
-          <li>
-            <h3>Lärare</h3>
-            <p>
-              NTI Skolan, <time datetime="2013-04">April 2013</time> -
-              <time datetime="2017-08">Augusti 2017</time>
-            </p>
-            <p>
-              På NTI Skolan arbetade jag med vuxenutbildning på distans. Jag var involverad i kursutveckling och
-              undervisade i en rad olika ämnen och kurser, från datorteknik till programmering och grafisk form.
-            </p>
-          </li>
-          <li>
-            <h3>Föreläsare</h3>
-            <p>
-              Skolverket, <time datetime="2019">2019</time>
-            </p>
-            <p>Jag höll en inspirationsföreläsning för Skolverket om kursupplägg och innehåll i Tillämpad programmering.
-            </p>
-          </li>
-        </ol>
-        <h2>Utbildning</h2>
-        <ol class="flow" role="list">
-          <li>
-            <h3>ULF projekt, programmering</h3>
-            <p>
-              Uppsala universitet, <time datetime="2022">2022</time> - <time datetime="2024">2024</time>
-            </p>
-            <p>Under denna period agerade jag som cirkelledare i ett ULF-projekt i samarbete med Uppsala universitet med
-              fokus på programmering på gymnasienivå.</p>
-          </li>
-          <li>
-            <h3>Forskningsprojekt, Active learning classroom</h3>
-            <p>
-              Umeå universitet, <time datetime="2018">2018</time> -
-              <time datetime="2020">2020</time>
-            </p>
-            <p>Jag deltog i ett forskningsprojekt kring ALC-klassrum i samarbete med Umeå universitet. <a
-                href="https://umu.diva-portal.org/smash/record.jsf?pid=diva2:1355875" target="_blank">Abstrakt</a>.</p>
-          </li>
-          <li>
-            <h3>Lärarexamen på avancerad nivå</h3>
-            <p>
-              Umeå universitet, <time datetime="2016">2016</time>
-            </p>
-          </li>
-          <li>
-            <h3>Kurser</h3>
-            <p>
-              Luleå tekniska universitet,
-              <time datetime="2013">2013</time> -
-              <time datetime="2021">2021</time>
-            </p>
-            <ul class="cv-list">
-              <li>Introduktion till datorspelsskapande</li>
-              <li>Introduktion till programmering och C#</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Kurser</h3>
-            <p>
-              Umeå universitet, <time datetime="2007">2007</time> -
-              <time datetime="2021">2021</time>
-            </p>
-            <ul class="cv-list">
-              <li>Handledarkurs för lärarstudenter</li>
-              <li>Webb, css, javascript - flertal kurser</li>
-              <li>Informatik</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </article>
+    </article>
 </main>
 {% endblock %}
 
