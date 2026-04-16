@@ -21,8 +21,8 @@
         "start": "2021-05-03",
         "end": false,
         "status": "Kanske",
-        "git": "https: //github.com/jensadev/journal",
-        "url": "https: //github.com/jensadev/journal/releases/tag/1.3",
+        "git": "https://github.com/jensadev/journal",
+        "url": "https://github.com/jensadev/journal/releases/tag/1.3",
         "thumb": "journal-thumb.png",
         "licens": "[GPL-3.0](https: //www.gnu.org/licenses/gpl-3.0.en.html)",
         "tech": [
